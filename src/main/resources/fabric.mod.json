@@ -2,25 +2,29 @@
   "schemaVersion": 1,
   "id": "nstarmcpack",
   "version": "${version}",
-
   "name": "nstarmcpack",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/Administrator/nstarmcpack"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/nstarmcpack/icon.png",
-
   "environment": "client",
-  "entrypoints": {},
-
-      "mixins": [
-        "nstarmcpack.mixins.json"
-      ],
-
+  "entrypoints": {
+    "main": [
+      "cn.nstarmc.nstarmcpack.main"
+    ],
+    "client": [
+      "cn.nstarmc.nstarmcpack.client.main"
+    ]
+  },
+  "mixins": [
+    "nstarmcpack.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
