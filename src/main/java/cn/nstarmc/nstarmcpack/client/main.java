@@ -4,7 +4,9 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.text.Text;
+import net.minecraft.client.util.math.MatrixStack;
+
+
 import org.lwjgl.glfw.GLFW;
 
 public class main implements ClientModInitializer {
@@ -14,5 +16,7 @@ public class main implements ClientModInitializer {
             long window = MinecraftClient.getInstance().getWindow().getHandle();
             GLFW.glfwSetWindowTitle(window, "NSTARMC ModPack - by luluxiaoyu");
         });
+
     }
+
 }
